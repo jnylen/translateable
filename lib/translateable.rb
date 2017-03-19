@@ -12,7 +12,7 @@ module Translateable
   module ClassMethods
     def translateable(*attrs)
       attrs.each do |attr|
-        translateable_sanity_check(attr)
+        #translateable_sanity_check(attr)
         define_translateable_methods(attr)
       end
       define_translateable_strong_params(*attrs)
